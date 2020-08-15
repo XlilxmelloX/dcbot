@@ -1,0 +1,11 @@
+npm install discord-moderator-bot --save
+var modBot = require('discord-moderator-bot')
+
+modBot(token, prefix)
+
+{prefix}ban @<user>: bans the mentioned user;
+{prefix}kick @<user>: kicks the mentioned user;
+{prefix}mute @<user>: mutes the mentioned user;
+{prefix}purge <amount> [optional: @user]: deletes the given amount of messages, min 2 max 100, if user is specified it will delete messages only of that user
+{prefix}notify @<user>: sends a DM (direct message) to the mentioned user
+{prefix}lock: locks the channel, not allowing users to message in there. For releasing a channel type {prefix}lock <release/unlock>.
